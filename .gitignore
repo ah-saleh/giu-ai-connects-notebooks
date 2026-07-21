@@ -1,0 +1,10 @@
+.venv/
+.env
+*.db
+.ipynb_checkpoints/
+__pycache__/
+skills/
+policy/
+campus_server.py
+checkpoints.db
+.DS_Store
