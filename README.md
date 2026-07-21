@@ -18,10 +18,10 @@ uv sync                 # creates .venv and installs everything
 uv run jupyter lab      # start Jupyter inside the environment
 ```
 
-Create a `.env` file in this folder:
+Copy the key template and fill in your API key:
 
-```
-ANTHROPIC_API_KEY=sk-ant-...
+```bash
+cp .env.example .env      # then edit .env and paste your key
 ```
 
 Using another provider? Put its key in `.env` (e.g. `OPENAI_API_KEY`) and change
