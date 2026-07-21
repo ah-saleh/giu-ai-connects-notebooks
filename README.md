@@ -10,14 +10,20 @@ One notebook per day, built together in the room. All on **LangChain v1** —
 | Wed | `day3-production-machinery.ipynb` | Skills + **your own SkillsMiddleware** (then the deepagents reveal), HITL middleware, checkpointers (SQLite), the sandbox lesson, an MCP server + client, a subagent behind a tool |
 | Thu | `day4-agents-in-action.ipynb` | A complete triage mini-system + an eval suite that proves it works |
 
-## Setup (once, with uv)
+## Setup (once)
 
 ```bash
 git clone https://github.com/ah-saleh/giu-ai-connects-notebooks.git
 cd giu-ai-connects-notebooks
-uv sync                 # creates .venv and installs everything
-uv run jupyter lab      # start Jupyter inside the environment
+
+python -m venv .venv
+source .venv/bin/activate        # Windows: .venv\Scripts\activate
+pip install -r requirements.txt
+jupyter lab
 ```
+
+(Python 3.11 or newer. Have [uv](https://docs.astral.sh/uv/)? Then just
+`uv sync && uv run jupyter lab` instead — same environment, faster.)
 
 Copy the key template and fill in your API key:
 
