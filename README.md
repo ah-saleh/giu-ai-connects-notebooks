@@ -7,8 +7,15 @@ One notebook per day, built together in the room. All on **LangChain v1** —
 |---|---|---|
 | — | `00-warmup-first-calls.ipynb` | Warm-up: plain `ChatAnthropic` calls — replies, tokens, temperature, streaming. Run it once to verify your setup |
 | Tue | `day2-build-an-agent.ipynb` | The smallest agent → messages → `system_prompt` dial → `tools` (+ the round trip once by hand) → `response_format` → workflow vs agent |
-| Wed | `day3-production-machinery.ipynb` | Skills + **your own SkillsMiddleware** (then the deepagents reveal), HITL middleware, checkpointers (SQLite), the sandbox lesson, an MCP server + client, a subagent behind a tool |
-| Thu | `day4-agents-in-action.ipynb` | A complete triage mini-system + an eval suite that proves it works |
+| Wed | `day3a-middleware.ipynb` | The six hooks around the loop; summarization that keeps the context window honest; **write your own ToolBudgetMiddleware** |
+| Wed | `day3b-human-in-the-loop.ipynb` | Checkpointers and `thread_id` (SQLite survives a restart); the run **pauses** before a write and resumes with `Command(resume=…)` |
+| Wed | `day3c-skills.ipynb` | Skill folders with a `SKILL.md` contract, the injector middleware, the deepagents reveal — then **author a skill yourself** |
+| Wed | `day3d-backends-and-sandboxes.ipynb` | Why restricted `eval` is not a sandbox; virtual files vs a real `workspace/` folder — deciding where the agent's work lands |
+| Thu | `day4a-mcp-and-subagents.ipynb` | A real **MCP server** + client, then a subagent behind one `@tool` — and a guarded MCP write that uses everything from Wednesday |
+| Thu | `day4b-triage-and-evals.ipynb` | A complete triage mini-system + an eval suite that proves it works |
+
+Wednesday and Thursday run as short sessions: slides, a live demo, then one
+notebook each. The last section of every notebook is **your** task.
 
 ## Setup (once)
 
