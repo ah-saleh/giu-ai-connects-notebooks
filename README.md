@@ -5,6 +5,7 @@ One notebook per day, built together in the room. All on **LangChain v1** —
 
 | Day | Notebook | What you build |
 |---|---|---|
+| — | `00-warmup-first-calls.ipynb` | Warm-up: plain `ChatAnthropic` calls — replies, tokens, temperature, streaming. Run it once to verify your setup |
 | Tue | `day2-build-an-agent.ipynb` | The smallest agent → messages → `system_prompt` dial → `tools` (+ the round trip once by hand) → `response_format` → workflow vs agent |
 | Wed | `day3-production-machinery.ipynb` | Skills + **your own SkillsMiddleware** (then the deepagents reveal), HITL middleware, checkpointers (SQLite), the sandbox lesson, an MCP server + client, a subagent behind a tool |
 | Thu | `day4-agents-in-action.ipynb` | A complete triage mini-system + an eval suite that proves it works |
